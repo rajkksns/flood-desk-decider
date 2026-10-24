@@ -3,12 +3,9 @@
 Submit before 23 October 2026, 11:59 p.m. PT on the hackathon page.
 
 - Repository: https://github.com/rajkksns/flood-desk-decider
-- Video: <paste the public YouTube/Vimeo link after uploading submission/video/demo.mp4>
-- Article: <paste the AWS Builder Center link after publishing submission/article/>
+- Video: https://youtu.be/--mKWqqgm2I
+- Article: https://builder.aws.com/project/3L7soK59dbvNPSGhLWFpgUp3qiO/flood-desk-a-lead-triage-agent-that-classifies-each-message-with-strands-decider-2b-before-amazon-bedrock-replies-about-26x-cheaper-per-decision
 - Tags: #strands-decider-2b #policy
 - Agent on AWS: arn:aws:bedrock-agentcore:us-east-1:886579222769:runtime/deciderkit_agent-4TEZog2lop
 
-Left to do by hand:
-1. Upload submission/video/demo.mp4 to YouTube or Vimeo as Public, and paste the link above.
-2. Publish the article on AWS Builder Center (submission/article/fields.md + body.md + cover.png + img/), with the two tags.
-3. Submit the three links on the hackathon page.
+Final step by hand: submit the four items above on the hackathon page.

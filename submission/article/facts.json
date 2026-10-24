@@ -1,0 +1,107 @@
+{
+ "pattern_tag": "#policy",
+ "agentcore_features": [],
+ "pattern_doc": "REUSABLE DECISION PATTERN: lead triage for a service business  (#policy)\n\nWhat it does\n    Sorts each incoming customer message into one category with Strands Decider 2B, before the\n    agent writes any reply. A confidence threshold decides whether the agent acts alone or hands\n    the message to a person. An advert or wrong number the decider is sure about is dropped.\n\nTyped questions and options\n    category (choice): what kind of request the customer is making, each option with a definition.\n\nWiring (where it sits in the agent's path)\n    verdict = LeadTriage(Decider()).route(customer_message)\n    if verdict.action == \"human\": queue_for_owner(...)\n    else: handle_by_category(verdict.category, customer_message)\n    In agent/agent.py this runs first, and the LLM (Amazon Bedrock) writes the reply after it.\n\nHow to reuse it\n    Change LEAD_CATEGORIES to your own categories and their definitions. Keep each definition\n    short and concrete. Change THRESHOLD in code you own. Numbers, dates and addresses should be\n    extracted by code, not by the decider; this version does not extract them yet.",
+ "questions_code": "QUESTIONS = {\n    \"category\": Decider.choice(\n        \"Which kind of request is this customer message?\",\n        LEAD_CATEGORIES,\n    ),\n}",
+ "agent_md": "# Use case\n\nFlood Desk: lead triage for a small local plumbing and electrical business.\n\n- **Pitch:** Flood Desk reads every customer message and decides what kind of request it is, so an emergency is never queued behind a price enquiry.\n- **Who it is for:** a small plumbing and electrical business that gets enquiries by message at all hours, and the customers who need a fast, correct reply.\n- **Features:**\n  - sorts each customer message into one of seven categories with Strands Decider 2B;\n  - acts alone on clear messages and hands unsure ones to a person;\n  - drops adverts and wrong numbers without replying;\n  - the reply is written by Amazon Bedrock after the category is set, so it cannot contradict the decision.\n- **The decision handed to Strands Decider 2B:** which kind of request is this customer message? (`#policy`)\n- **Why a decision model:** every incoming message needs a category before anything else happens. The decision must be fast, cheap, and return a confidence the code can branch on.\n- **Amazon Bedrock:** writes the reply for the category it is given (Amazon Nova Pro by default).\n- **Not yet built:** extracting numbers, dates and addresses in code; a live owner queue.\n",
+ "llm_provider_local_runs": "bedrock",
+ "agent_name": "Flood Desk: lead triage for a plumbing and electrical business",
+ "bench": {
+  "summary": {
+   "decider": {
+    "accuracy": 1.0,
+    "decisions": 32,
+    "per_question": {
+     "category": 1.0
+    },
+    "latency_p50_ms": 1967.3,
+    "latency_p95_ms": 2177.9,
+    "usd_per_1k_decisions": 0.035,
+    "confident_share": 0.8438,
+    "accuracy_when_confident": 1.0,
+    "sent_to_human_at_threshold": 5
+   },
+   "llm": {
+    "accuracy": 1.0,
+    "decisions": 32,
+    "per_question": {
+     "category": 1.0
+    },
+    "latency_p50_ms": 1833.6,
+    "latency_p95_ms": 5290.4,
+    "usd_per_1k_decisions": 0.9051,
+    "confident_share": 1.0,
+    "accuracy_when_confident": 1.0,
+    "sent_to_human_at_threshold": 0
+   },
+   "speedup_p50": 0.93
+  },
+  "decider_model": "strands-decider-2b-hobson-v19",
+  "decider_mode": "ugmdu",
+  "llm_model": "us.amazon.nova-pro-v1:0",
+  "cases": 32,
+  "split": "all",
+  "threshold": 0.7
+ },
+ "bench_table": "Decider: strands-decider-2b-hobson-v19 (ugmdu). 32 labelled cases, 32 decisions.\n\n| | Strands Decider 2B | us.amazon.nova-pro-v1:0 |\n|---|---|---|\n| Accuracy | 100.0% | 100.0% |\n| Latency p50 per decision | 1967 ms | 1834 ms |\n| Latency p95 | 2178 ms | 5290 ms |\n| Cost per 1,000 decisions | $0.0350 | $0.9051 |\n| Answered alone at confidence >= 0.7 | 84% | 100% |\n| Accuracy when confident | 100.0% | 100.0% |\n\nAt the median the LLM was 1.1x faster than the decider on this setup (ugmdu).\n",
+ "demo_turns": [
+  {
+   "user": "water everywhere under the sink, can someone come now??",
+   "reply": "Hi there,\n\nSorry to hear you're having trouble. Please provide your full address and a contact phone number. We'll arrange a same-day visit straight away.\n\nThanks,\n[Your Name]",
+   "decisions": [
+    {
+     "pattern": "#policy",
+     "category": "emergency",
+     "confidence": 0.864,
+     "action": "act",
+     "decider_ms": 1340,
+     "verdict": "act"
+    }
+   ],
+   "latency_ms": 1934
+  },
+  {
+   "user": "Can you quote me for replacing the ceiling fans in my lounge?",
+   "reply": "Hi there,\n\nWe can prepare an estimate for you. Please provide details of the job, including the number of fans and any specific requirements.\n\nThanks,\n[Your Name]",
+   "decisions": [
+    {
+     "pattern": "#policy",
+     "category": "new_quote",
+     "confidence": 0.964,
+     "action": "act",
+     "decider_ms": 1287,
+     "verdict": "act"
+    }
+   ],
+   "latency_ms": 1821
+  },
+  {
+   "user": "Hi, just wondering about stuff, not sure who to ask.",
+   "reply": "Hi there,\n\nPlease ask your specific question, and we'll do our best to help.\n\nThanks,\n[Your Name]",
+   "decisions": [
+    {
+     "pattern": "#policy",
+     "category": "general_question",
+     "confidence": 0.807,
+     "action": "act",
+     "decider_ms": 1237,
+     "verdict": "act"
+    }
+   ],
+   "latency_ms": 1779
+  }
+ ],
+ "deployment": {
+  "runtime_arn": "arn:aws:bedrock-agentcore:us-east-1:886579222769:runtime/deciderkit_agent-4TEZog2lop",
+  "region": "us-east-1",
+  "deployed_at": 1792813090.2237344,
+  "deploy_seconds": 533,
+  "decider_mode": "ugmdu",
+  "bedrock_model": "us.amazon.nova-pro-v1:0",
+  "eager": false,
+  "memories": {},
+  "gateways": {}
+ },
+ "repo_url": "https://github.com/rajkksns/flood-desk-decider",
+ "video_url": "https://youtu.be/--mKWqqgm2I"
+}
