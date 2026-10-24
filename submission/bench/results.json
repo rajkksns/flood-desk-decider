@@ -1,0 +1,746 @@
+{
+ "decider_model": "strands-decider-2b-hobson-v19",
+ "rows": [
+  {
+   "i": 0,
+   "expected": {
+    "category": "emergency"
+   },
+   "decider": {
+    "category": {
+     "label": "emergency",
+     "confidence": 0.8636
+    }
+   },
+   "decider_ms": 2309.3332999851555,
+   "decider_server_ms": 1149.4,
+   "llm": {
+    "category": {
+     "label": "emergency",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 5290.351199917495,
+   "llm_cost": 0.0008912000000000001
+  },
+  {
+   "i": 1,
+   "expected": {
+    "category": "new_quote"
+   },
+   "decider": {
+    "category": {
+     "label": "new_quote",
+     "confidence": 0.964
+    }
+   },
+   "decider_ms": 2053.8093999493867,
+   "decider_server_ms": 1235.8,
+   "llm": {
+    "category": {
+     "label": "new_quote",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1956.9359000306576,
+   "llm_cost": 0.0008736000000000001
+  },
+  {
+   "i": 2,
+   "expected": {
+    "category": "job_status"
+   },
+   "decider": {
+    "category": {
+     "label": "job_status",
+     "confidence": 0.9731
+    }
+   },
+   "decider_ms": 1942.1463999897242,
+   "decider_server_ms": 1063.9,
+   "llm": {
+    "category": {
+     "label": "job_status",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1769.05259990599,
+   "llm_cost": 0.0009000000000000002
+  },
+  {
+   "i": 3,
+   "expected": {
+    "category": "reschedule_or_cancel"
+   },
+   "decider": {
+    "category": {
+     "label": "reschedule_or_cancel",
+     "confidence": 0.9612
+    }
+   },
+   "decider_ms": 2188.8845999492332,
+   "decider_server_ms": 1264.5,
+   "llm": {
+    "category": {
+     "label": "reschedule_or_cancel",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1630.460700020194,
+   "llm_cost": 0.0009088000000000002
+  },
+  {
+   "i": 4,
+   "expected": {
+    "category": "complaint"
+   },
+   "decider": {
+    "category": {
+     "label": "complaint",
+     "confidence": 0.9167
+    }
+   },
+   "decider_ms": 1829.5127999735996,
+   "decider_server_ms": 1060.2,
+   "llm": {
+    "category": {
+     "label": "complaint",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1704.1878000600263,
+   "llm_cost": 0.0008872000000000001
+  },
+  {
+   "i": 5,
+   "expected": {
+    "category": "general_question"
+   },
+   "decider": {
+    "category": {
+     "label": "general_question",
+     "confidence": 0.9833
+    }
+   },
+   "decider_ms": 2127.845100010745,
+   "decider_server_ms": 1294.7,
+   "llm": {
+    "category": {
+     "label": "general_question",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1712.3435999965295,
+   "llm_cost": 0.0008872000000000001
+  },
+  {
+   "i": 6,
+   "expected": {
+    "category": "spam_or_irrelevant"
+   },
+   "decider": {
+    "category": {
+     "label": "spam_or_irrelevant",
+     "confidence": 0.5497
+    }
+   },
+   "decider_ms": 1965.1237999787554,
+   "decider_server_ms": 1170.0,
+   "llm": {
+    "category": {
+     "label": "spam_or_irrelevant",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1601.8942999653518,
+   "llm_cost": 0.0008912000000000001
+  },
+  {
+   "i": 7,
+   "expected": {
+    "category": "emergency"
+   },
+   "decider": {
+    "category": {
+     "label": "emergency",
+     "confidence": 0.9288
+    }
+   },
+   "decider_ms": 2050.44389993418,
+   "decider_server_ms": 1293.0,
+   "llm": {
+    "category": {
+     "label": "emergency",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1916.1051999544725,
+   "llm_cost": 0.0010024
+  },
+  {
+   "i": 8,
+   "expected": {
+    "category": "new_quote"
+   },
+   "decider": {
+    "category": {
+     "label": "new_quote",
+     "confidence": 0.9266
+    }
+   },
+   "decider_ms": 1835.0063000107184,
+   "decider_server_ms": 1067.6,
+   "llm": {
+    "category": {
+     "label": "new_quote",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1744.8743999702856,
+   "llm_cost": 0.0008784
+  },
+  {
+   "i": 9,
+   "expected": {
+    "category": "job_status"
+   },
+   "decider": {
+    "category": {
+     "label": "job_status",
+     "confidence": 0.9259
+    }
+   },
+   "decider_ms": 1983.220100053586,
+   "decider_server_ms": 1227.3,
+   "llm": {
+    "category": {
+     "label": "job_status",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1845.6808000337332,
+   "llm_cost": 0.0009320000000000001
+  },
+  {
+   "i": 10,
+   "expected": {
+    "category": "emergency"
+   },
+   "decider": {
+    "category": {
+     "label": "emergency",
+     "confidence": 0.385
+    }
+   },
+   "decider_ms": 1955.7018999475986,
+   "decider_server_ms": 1177.5,
+   "llm": {
+    "category": {
+     "label": "emergency",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1854.941500001587,
+   "llm_cost": 0.000912
+  },
+  {
+   "i": 11,
+   "expected": {
+    "category": "new_quote"
+   },
+   "decider": {
+    "category": {
+     "label": "new_quote",
+     "confidence": 0.9579
+    }
+   },
+   "decider_ms": 1967.3116999911144,
+   "decider_server_ms": 1142.4,
+   "llm": {
+    "category": {
+     "label": "new_quote",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1948.3030999545008,
+   "llm_cost": 0.0008872000000000001
+  },
+  {
+   "i": 12,
+   "expected": {
+    "category": "job_status"
+   },
+   "decider": {
+    "category": {
+     "label": "job_status",
+     "confidence": 0.9359
+    }
+   },
+   "decider_ms": 1953.215799992904,
+   "decider_server_ms": 1210.1,
+   "llm": {
+    "category": {
+     "label": "job_status",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 2354.2540000053123,
+   "llm_cost": 0.0009272
+  },
+  {
+   "i": 13,
+   "expected": {
+    "category": "reschedule_or_cancel"
+   },
+   "decider": {
+    "category": {
+     "label": "reschedule_or_cancel",
+     "confidence": 0.9613
+    }
+   },
+   "decider_ms": 1913.980600074865,
+   "decider_server_ms": 1093.3,
+   "llm": {
+    "category": {
+     "label": "reschedule_or_cancel",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 7902.599400025792,
+   "llm_cost": 0.0008576000000000001
+  },
+  {
+   "i": 14,
+   "expected": {
+    "category": "complaint"
+   },
+   "decider": {
+    "category": {
+     "label": "complaint",
+     "confidence": 0.8062
+    }
+   },
+   "decider_ms": 2177.940299967304,
+   "decider_server_ms": 1408.6,
+   "llm": {
+    "category": {
+     "label": "complaint",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 7077.751699951477,
+   "llm_cost": 0.0009056000000000001
+  },
+  {
+   "i": 15,
+   "expected": {
+    "category": "general_question"
+   },
+   "decider": {
+    "category": {
+     "label": "general_question",
+     "confidence": 0.9641
+    }
+   },
+   "decider_ms": 1973.4587999992073,
+   "decider_server_ms": 1196.9,
+   "llm": {
+    "category": {
+     "label": "general_question",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1591.7158999945968,
+   "llm_cost": 0.0009159999999999999
+  },
+  {
+   "i": 16,
+   "expected": {
+    "category": "spam_or_irrelevant"
+   },
+   "decider": {
+    "category": {
+     "label": "spam_or_irrelevant",
+     "confidence": 0.7604
+    }
+   },
+   "decider_ms": 1816.33179995697,
+   "decider_server_ms": 1059.2,
+   "llm": {
+    "category": {
+     "label": "spam_or_irrelevant",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1893.8323999755085,
+   "llm_cost": 0.0009384000000000001
+  },
+  {
+   "i": 17,
+   "expected": {
+    "category": "emergency"
+   },
+   "decider": {
+    "category": {
+     "label": "emergency",
+     "confidence": 0.864
+    }
+   },
+   "decider_ms": 2124.265899998136,
+   "decider_server_ms": 1320.3,
+   "llm": {
+    "category": {
+     "label": "emergency",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1850.9823000058532,
+   "llm_cost": 0.0008776000000000001
+  },
+  {
+   "i": 18,
+   "expected": {
+    "category": "new_quote"
+   },
+   "decider": {
+    "category": {
+     "label": "new_quote",
+     "confidence": 0.9561
+    }
+   },
+   "decider_ms": 2126.5771000180393,
+   "decider_server_ms": 1223.0,
+   "llm": {
+    "category": {
+     "label": "new_quote",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1657.369100023061,
+   "llm_cost": 0.0008368
+  },
+  {
+   "i": 19,
+   "expected": {
+    "category": "general_question"
+   },
+   "decider": {
+    "category": {
+     "label": "general_question",
+     "confidence": 0.7051
+    }
+   },
+   "decider_ms": 1871.664599981159,
+   "decider_server_ms": 1102.2,
+   "llm": {
+    "category": {
+     "label": "general_question",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1580.155299976468,
+   "llm_cost": 0.0008312
+  },
+  {
+   "i": 20,
+   "expected": {
+    "category": "emergency"
+   },
+   "decider": {
+    "category": {
+     "label": "emergency",
+     "confidence": 0.6944
+    }
+   },
+   "decider_ms": 2053.95749991294,
+   "decider_server_ms": 1256.8,
+   "llm": {
+    "category": {
+     "label": "emergency",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1810.144399991259,
+   "llm_cost": 0.0009504000000000001
+  },
+  {
+   "i": 21,
+   "expected": {
+    "category": "new_quote"
+   },
+   "decider": {
+    "category": {
+     "label": "new_quote",
+     "confidence": 0.9422
+    }
+   },
+   "decider_ms": 1890.6682999804616,
+   "decider_server_ms": 1175.5,
+   "llm": {
+    "category": {
+     "label": "new_quote",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1939.9493999080732,
+   "llm_cost": 0.0008984
+  },
+  {
+   "i": 22,
+   "expected": {
+    "category": "job_status"
+   },
+   "decider": {
+    "category": {
+     "label": "job_status",
+     "confidence": 0.9229
+    }
+   },
+   "decider_ms": 1948.0048000114039,
+   "decider_server_ms": 1193.5,
+   "llm": {
+    "category": {
+     "label": "job_status",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1758.0293000210077,
+   "llm_cost": 0.0009184
+  },
+  {
+   "i": 23,
+   "expected": {
+    "category": "reschedule_or_cancel"
+   },
+   "decider": {
+    "category": {
+     "label": "reschedule_or_cancel",
+     "confidence": 0.654
+    }
+   },
+   "decider_ms": 1890.8749000402167,
+   "decider_server_ms": 1067.6,
+   "llm": {
+    "category": {
+     "label": "reschedule_or_cancel",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1893.356000073254,
+   "llm_cost": 0.0009384
+  },
+  {
+   "i": 24,
+   "expected": {
+    "category": "complaint"
+   },
+   "decider": {
+    "category": {
+     "label": "complaint",
+     "confidence": 0.9081
+    }
+   },
+   "decider_ms": 1946.8816999578848,
+   "decider_server_ms": 1175.3,
+   "llm": {
+    "category": {
+     "label": "complaint",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1914.2549999523908,
+   "llm_cost": 0.0008984
+  },
+  {
+   "i": 25,
+   "expected": {
+    "category": "general_question"
+   },
+   "decider": {
+    "category": {
+     "label": "general_question",
+     "confidence": 0.9672
+    }
+   },
+   "decider_ms": 2047.862600069493,
+   "decider_server_ms": 1218.7,
+   "llm": {
+    "category": {
+     "label": "general_question",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1754.9553000135347,
+   "llm_cost": 0.0008848
+  },
+  {
+   "i": 26,
+   "expected": {
+    "category": "spam_or_irrelevant"
+   },
+   "decider": {
+    "category": {
+     "label": "spam_or_irrelevant",
+     "confidence": 0.5948
+    }
+   },
+   "decider_ms": 1874.9826999846846,
+   "decider_server_ms": 1154.5,
+   "llm": {
+    "category": {
+     "label": "spam_or_irrelevant",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1987.657899968326,
+   "llm_cost": 0.001016
+  },
+  {
+   "i": 27,
+   "expected": {
+    "category": "emergency"
+   },
+   "decider": {
+    "category": {
+     "label": "emergency",
+     "confidence": 0.7933
+    }
+   },
+   "decider_ms": 2047.098399954848,
+   "decider_server_ms": 1263.5,
+   "llm": {
+    "category": {
+     "label": "emergency",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 1833.61790003255,
+   "llm_cost": 0.0009232000000000001
+  },
+  {
+   "i": 28,
+   "expected": {
+    "category": "new_quote"
+   },
+   "decider": {
+    "category": {
+     "label": "new_quote",
+     "confidence": 0.9786
+    }
+   },
+   "decider_ms": 2054.43770007696,
+   "decider_server_ms": 1284.4,
+   "llm": {
+    "category": {
+     "label": "new_quote",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1555.312699987553,
+   "llm_cost": 0.0008816000000000001
+  },
+  {
+   "i": 29,
+   "expected": {
+    "category": "job_status"
+   },
+   "decider": {
+    "category": {
+     "label": "job_status",
+     "confidence": 0.8004
+    }
+   },
+   "decider_ms": 1846.0629999171942,
+   "decider_server_ms": 1092.2,
+   "llm": {
+    "category": {
+     "label": "job_status",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1822.5310000125319,
+   "llm_cost": 0.0008664
+  },
+  {
+   "i": 30,
+   "expected": {
+    "category": "reschedule_or_cancel"
+   },
+   "decider": {
+    "category": {
+     "label": "reschedule_or_cancel",
+     "confidence": 0.8847
+    }
+   },
+   "decider_ms": 2091.792899998836,
+   "decider_server_ms": 1256.0,
+   "llm": {
+    "category": {
+     "label": "reschedule_or_cancel",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1797.563900006935,
+   "llm_cost": 0.0009544000000000002
+  },
+  {
+   "i": 31,
+   "expected": {
+    "category": "general_question"
+   },
+   "decider": {
+    "category": {
+     "label": "general_question",
+     "confidence": 0.7592
+    }
+   },
+   "decider_ms": 1913.5763000231236,
+   "decider_server_ms": 1075.8,
+   "llm": {
+    "category": {
+     "label": "general_question",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 1668.3937000343576,
+   "llm_cost": 0.0008896
+  }
+ ],
+ "summary": {
+  "decider": {
+   "accuracy": 1.0,
+   "decisions": 32,
+   "per_question": {
+    "category": 1.0
+   },
+   "latency_p50_ms": 1967.3,
+   "latency_p95_ms": 2177.9,
+   "usd_per_1k_decisions": 0.035,
+   "confident_share": 0.8438,
+   "accuracy_when_confident": 1.0,
+   "sent_to_human_at_threshold": 5
+  },
+  "llm": {
+   "accuracy": 1.0,
+   "decisions": 32,
+   "per_question": {
+    "category": 1.0
+   },
+   "latency_p50_ms": 1833.6,
+   "latency_p95_ms": 5290.4,
+   "usd_per_1k_decisions": 0.9051,
+   "confident_share": 1.0,
+   "accuracy_when_confident": 1.0,
+   "sent_to_human_at_threshold": 0
+  },
+  "speedup_p50": 0.93
+ },
+ "threshold": 0.7,
+ "llm_model": "us.amazon.nova-pro-v1:0",
+ "llm_provider": "bedrock",
+ "llm_where": "Amazon Bedrock (us.amazon.nova-pro-v1:0)",
+ "decider_url": "https://da25tnxy06gjk.cloudfront.net",
+ "decider_mode": "ugmdu",
+ "ran_at": 1792754336.0003753,
+ "split": "all"
+}

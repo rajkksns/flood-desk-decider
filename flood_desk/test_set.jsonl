@@ -1,0 +1,15 @@
+{"id": "t01", "split": "tune", "label": "emergency", "message": "water everywhere under the sink, can someone come now??"}
+{"id": "t02", "split": "tune", "label": "new_quote", "message": "Can you quote me for replacing 2 ceiling fans in my lounge?"}
+{"id": "t03", "split": "tune", "label": "job_status", "message": "when will the electrician arrive? the booking was for tuesday"}
+{"id": "t04", "split": "tune", "label": "reschedule_or_cancel", "message": "Please move my Thursday appointment to next week, something came up"}
+{"id": "t05", "split": "tune", "label": "complaint", "message": "You charged me twice for the last visit and nobody answers my calls"}
+{"id": "t06", "split": "tune", "label": "general_question", "message": "Do you cover the Anna Nagar area and are you open on Sundays?"}
+{"id": "t07", "split": "tune", "label": "spam_or_irrelevant", "message": "Hi, we offer SEO services for your business, want a quick call?"}
+{"id": "t08", "split": "tune", "label": "emergency", "message": "power's gone in half the flat and I can smell burning from the fuse box"}
+{"id": "t09", "split": "tune", "label": "new_quote", "message": "how much to install a 25 litre geyser?"}
+{"id": "t10", "split": "tune", "label": "job_status", "message": "is my plumber coming today for the tap repair?"}
+{"id": "h01", "split": "holdout", "label": "new_quote", "message": "Can someone look at a dripping bathroom pipe sometime next week? Not urgent."}
+{"id": "h02", "split": "holdout", "label": "reschedule_or_cancel", "message": "I want to cancel Saturday's visit, we sorted it ourselves"}
+{"id": "h03", "split": "holdout", "label": "complaint", "message": "Your technician was rude and left a mess in my kitchen. Unacceptable."}
+{"id": "h04", "split": "holdout", "label": "general_question", "message": "Do you do commercial electrical work too?"}
+{"id": "h05", "split": "holdout", "label": "emergency", "message": "Tap leaking badly in the kitchen, water on the floor, please send someone"}

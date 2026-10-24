@@ -1,0 +1,32 @@
+{"state": "Customer message:\nwater everywhere under the sink, can someone come now??", "expected": {"category": "emergency"}, "split": "tune"}
+{"state": "Customer message:\nCan you quote me for replacing the ceiling fans in my lounge?", "expected": {"category": "new_quote"}, "split": "tune"}
+{"state": "Customer message:\nwhen will the electrician arrive? the booking was for tuesday", "expected": {"category": "job_status"}, "split": "tune"}
+{"state": "Customer message:\nPlease move my Thursday appointment to next week, something came up", "expected": {"category": "reschedule_or_cancel"}, "split": "tune"}
+{"state": "Customer message:\nYou charged me twice for the last visit and nobody answers my calls", "expected": {"category": "complaint"}, "split": "tune"}
+{"state": "Customer message:\nDo you cover the Anna Nagar area and are you open on Sundays?", "expected": {"category": "general_question"}, "split": "tune"}
+{"state": "Customer message:\nHi, we offer SEO services for your business, want a quick call?", "expected": {"category": "spam_or_irrelevant"}, "split": "tune"}
+{"state": "Customer message:\npower's gone in half the flat and I can smell burning from the fuse box", "expected": {"category": "emergency"}, "split": "tune"}
+{"state": "Customer message:\nhow much to install a geyser?", "expected": {"category": "new_quote"}, "split": "tune"}
+{"state": "Customer message:\nis my plumber coming today for the tap repair?", "expected": {"category": "job_status"}, "split": "tune"}
+{"state": "Customer message:\nOur gas smells strongly in the kitchen, what should we do?", "expected": {"category": "emergency"}, "split": "tune"}
+{"state": "Customer message:\nCan I get a price for rewiring a 3 bedroom flat?", "expected": {"category": "new_quote"}, "split": "tune"}
+{"state": "Customer message:\nWhat time is my engineer coming tomorrow?", "expected": {"category": "job_status"}, "split": "tune"}
+{"state": "Customer message:\nI need to cancel today's visit, I am travelling", "expected": {"category": "reschedule_or_cancel"}, "split": "tune"}
+{"state": "Customer message:\nThe shelf you put up fell down and the wall is damaged. I'm very angry about this.", "expected": {"category": "complaint"}, "split": "tune"}
+{"state": "Customer message:\nAre you on the Velachery route? What are your weekend hours?", "expected": {"category": "general_question"}, "split": "tune"}
+{"state": "Customer message:\nGet more Google reviews for your business! Cheap packages, reply YES", "expected": {"category": "spam_or_irrelevant"}, "split": "tune"}
+{"state": "Customer message:\nCircuit breaker keeps tripping and the lights flicker, can someone come today?", "expected": {"category": "emergency"}, "split": "tune"}
+{"state": "Customer message:\nHow much for painting two rooms?", "expected": {"category": "new_quote"}, "split": "tune"}
+{"state": "Customer message:\nDo you accept card payment on site?", "expected": {"category": "general_question"}, "split": "tune"}
+{"state": "Customer message:\nwater dripping from the ceiling light in the bathroom, getting worse", "expected": {"category": "emergency"}, "split": "test"}
+{"state": "Customer message:\nHi, could I get a quote to fit an outdoor socket in the garden?", "expected": {"category": "new_quote"}, "split": "test"}
+{"state": "Customer message:\nIs the plumber still on for Monday morning?", "expected": {"category": "job_status"}, "split": "test"}
+{"state": "Customer message:\nPlease push the Tuesday visit to the following Friday", "expected": {"category": "reschedule_or_cancel"}, "split": "test"}
+{"state": "Customer message:\nThe paint you left on my door frame is peeling off already. Not happy.", "expected": {"category": "complaint"}, "split": "test"}
+{"state": "Customer message:\nDo you work in Tambaram?", "expected": {"category": "general_question"}, "split": "test"}
+{"state": "Customer message:\nWe sell solar panels at the lowest price in town, call us back", "expected": {"category": "spam_or_irrelevant"}, "split": "test"}
+{"state": "Customer message:\nsmoke coming out of a plug socket in my bedroom!!", "expected": {"category": "emergency"}, "split": "test"}
+{"state": "Customer message:\nWould it be possible to get a quote for a new kitchen sink installation?", "expected": {"category": "new_quote"}, "split": "test"}
+{"state": "Customer message:\nwhen is the engineer due, I took the afternoon off", "expected": {"category": "job_status"}, "split": "test"}
+{"state": "Customer message:\nI'd like to cancel the boiler service booked for next week", "expected": {"category": "reschedule_or_cancel"}, "split": "test"}
+{"state": "Customer message:\nAre you registered and insured for electrical work?", "expected": {"category": "general_question"}, "split": "test"}

@@ -1,0 +1,134 @@
+{
+  "tune": {
+    "accuracy": 1.0,
+    "n": 10,
+    "rows": [
+      {
+        "id": "t01",
+        "label": "emergency",
+        "pred": "emergency",
+        "conf": 0.864,
+        "action": "act",
+        "correct": true
+      },
+      {
+        "id": "t02",
+        "label": "new_quote",
+        "pred": "new_quote",
+        "conf": 0.967,
+        "action": "act",
+        "correct": true
+      },
+      {
+        "id": "t03",
+        "label": "job_status",
+        "pred": "job_status",
+        "conf": 0.973,
+        "action": "act",
+        "correct": true
+      },
+      {
+        "id": "t04",
+        "label": "reschedule_or_cancel",
+        "pred": "reschedule_or_cancel",
+        "conf": 0.961,
+        "action": "act",
+        "correct": true
+      },
+      {
+        "id": "t05",
+        "label": "complaint",
+        "pred": "complaint",
+        "conf": 0.917,
+        "action": "act",
+        "correct": true
+      },
+      {
+        "id": "t06",
+        "label": "general_question",
+        "pred": "general_question",
+        "conf": 0.983,
+        "action": "act",
+        "correct": true
+      },
+      {
+        "id": "t07",
+        "label": "spam_or_irrelevant",
+        "pred": "spam_or_irrelevant",
+        "conf": 0.55,
+        "action": "human",
+        "correct": true
+      },
+      {
+        "id": "t08",
+        "label": "emergency",
+        "pred": "emergency",
+        "conf": 0.929,
+        "action": "act",
+        "correct": true
+      },
+      {
+        "id": "t09",
+        "label": "new_quote",
+        "pred": "new_quote",
+        "conf": 0.944,
+        "action": "act",
+        "correct": true
+      },
+      {
+        "id": "t10",
+        "label": "job_status",
+        "pred": "job_status",
+        "conf": 0.926,
+        "action": "act",
+        "correct": true
+      }
+    ]
+  },
+  "holdout": {
+    "accuracy": 0.8,
+    "n": 5,
+    "rows": [
+      {
+        "id": "h01",
+        "label": "new_quote",
+        "pred": "job_status",
+        "conf": 0.478,
+        "action": "human",
+        "correct": false
+      },
+      {
+        "id": "h02",
+        "label": "reschedule_or_cancel",
+        "pred": "reschedule_or_cancel",
+        "conf": 0.938,
+        "action": "act",
+        "correct": true
+      },
+      {
+        "id": "h03",
+        "label": "complaint",
+        "pred": "complaint",
+        "conf": 0.87,
+        "action": "act",
+        "correct": true
+      },
+      {
+        "id": "h04",
+        "label": "general_question",
+        "pred": "general_question",
+        "conf": 0.787,
+        "action": "act",
+        "correct": true
+      },
+      {
+        "id": "h05",
+        "label": "emergency",
+        "pred": "emergency",
+        "conf": 0.891,
+        "action": "act",
+        "correct": true
+      }
+    ]
+  }
+}

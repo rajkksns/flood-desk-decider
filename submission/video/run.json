@@ -1,0 +1,74 @@
+[
+ {
+  "start": 4.992666006088257,
+  "end": 18.10174012184143,
+  "out": {
+   "reply": "Hi there,\n\nSorry to hear you're having trouble. Please provide your full address and a contact phone number. We'll arrange a same-day visit straight away.\n\nThanks,\n[Your Name]",
+   "decisions": [
+    {
+     "pattern": "#policy",
+     "category": "emergency",
+     "confidence": 0.864,
+     "action": "act",
+     "decider_ms": 1340,
+     "verdict": "act"
+    }
+   ],
+   "model_id": "us.amazon.nova-pro-v1:0",
+   "latency_ms": 1934,
+   "agent": "Flood Desk: lead triage for a plumbing and electrical business",
+   "eager": false,
+   "served_by": "Amazon Bedrock AgentCore Runtime"
+  },
+  "say": "water everywhere under the sink, can someone come now??",
+  "narrate": "A customer has water spreading under the sink and wants someone straight away."
+ },
+ {
+  "start": 18.10174012184143,
+  "end": 24.623149156570435,
+  "out": {
+   "reply": "Hi there,\n\nWe can prepare an estimate for you. Please provide details of the job, including the number of fans and any specific requirements.\n\nThanks,\n[Your Name]",
+   "decisions": [
+    {
+     "pattern": "#policy",
+     "category": "new_quote",
+     "confidence": 0.964,
+     "action": "act",
+     "decider_ms": 1287,
+     "verdict": "act"
+    }
+   ],
+   "model_id": "us.amazon.nova-pro-v1:0",
+   "latency_ms": 1821,
+   "agent": "Flood Desk: lead triage for a plumbing and electrical business",
+   "eager": false,
+   "served_by": "Amazon Bedrock AgentCore Runtime"
+  },
+  "say": "Can you quote me for replacing the ceiling fans in my lounge?",
+  "narrate": "A customer asks for a price on a new job."
+ },
+ {
+  "start": 24.623149156570435,
+  "end": 31.254571676254272,
+  "out": {
+   "reply": "Hi there,\n\nPlease ask your specific question, and we'll do our best to help.\n\nThanks,\n[Your Name]",
+   "decisions": [
+    {
+     "pattern": "#policy",
+     "category": "general_question",
+     "confidence": 0.807,
+     "action": "act",
+     "decider_ms": 1237,
+     "verdict": "act"
+    }
+   ],
+   "model_id": "us.amazon.nova-pro-v1:0",
+   "latency_ms": 1779,
+   "agent": "Flood Desk: lead triage for a plumbing and electrical business",
+   "eager": false,
+   "served_by": "Amazon Bedrock AgentCore Runtime"
+  },
+  "say": "Hi, just wondering about stuff, not sure who to ask.",
+  "narrate": "This message is vague, so the decider may not be sure what kind of request it is."
+ }
+]

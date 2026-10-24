@@ -1,0 +1,22 @@
+# What the demo video shows. Each turn is typed into the demo UI against your real agent.
+# `narrate` describes the situation only; make_video.py appends what the decider actually decided,
+# so the narration never claims something that did not happen. Keep it under about 2.5 minutes.
+title: "Flood Desk: a lead triage agent that hands unsure messages to a person"
+# The project slide (shown after the title): a one-line pitch and the features worth showing.
+pitch: "Flood Desk reads every customer message for a plumbing and electrical business and decides what kind of request it is."
+features:
+  - "sorts each customer message into a category with Strands Decider 2B"
+  - "acts on clear messages and hands unsure ones to a person"
+  - "drops adverts and wrong numbers without replying"
+  - "runs on Amazon Bedrock AgentCore Runtime"
+# Flood Desk does not need the eager prompt: the decision is made before the reply in every case.
+eager: false
+intro: "This is Flood Desk. Amazon Bedrock writes the replies. Strands Decider reads each customer message first and decides what kind of request it is, before anything else happens."
+turns:
+  - say: "water everywhere under the sink, can someone come now??"
+    narrate: "A customer has water spreading under the sink and wants someone straight away."
+  - say: "Can you quote me for replacing the ceiling fans in my lounge?"
+    narrate: "A customer asks for a price on a new job."
+  - say: "Hi, just wondering about stuff, not sure who to ask."
+    narrate: "This message is vague, so the decider may not be sure what kind of request it is."
+outro: "One decision per message, a confidence the code can branch on, and a person for anything the decider is unsure about. Amazon Bedrock writes the replies."
